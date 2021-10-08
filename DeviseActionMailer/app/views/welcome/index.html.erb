@@ -1,0 +1,34 @@
+<h1>Welcome#index</h1>
+<h1>Clients</h1>
+
+<ul>
+  <% @clients.each do |client| %>
+    <li>
+      <br><%= client.name %></br>
+      <br><%= client.gender %></br>
+      <br><%= client.address %></br>
+      <br><%= client.contact %></br>
+    </li>
+  <% end %>
+</ul>
+<% if user_signed_in? %>
+  Logged in as <strong><%= current_user.email %></strong>.
+  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+<% else %>
+  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+
+
+<!-- Header -->
+<!-- Bootstrap core CSS -->
+<!-- Custom fonts for this template -->
+<!-- Custom styles for this template -->
+<!-- Navigation -->
+<%= yield %>
+<!-- Footer -->
+<!-- Bootstrap core JavaScript -->
+<!-- Plugin JavaScript -->
+<!-- Custom scripts for this template -->
+<!-- Contact Section -->
+<% end %>

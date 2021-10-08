@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  policy_id: 1
+  term: 1
+  total_amount: 1
+  payment_method: MyString
+  age_limit: 1
+
+two:
+  policy_id: 1
+  term: 1
+  total_amount: 1
+  payment_method: MyString
+  age_limit: 1

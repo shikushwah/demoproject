@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  agentt_id: 1
+  name: MyString
+  branch: MyText
+  contact: 1
+
+two:
+  agentt_id: 1
+  name: MyString
+  branch: MyText
+  contact: 1
